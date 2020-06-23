@@ -48,6 +48,10 @@ object DataHubStreamingDemo {
       StorageLevel.MEMORY_AND_DISK
     )
 
+    /**
+      * datahub streaming任务目前可以在自建spark上跑，暂不支持maxcompute平台
+      */
+
     //dataStream.count().print()
     dataStream.count().foreachRDD((rdd,time)=>{
       println(DateUtils.format(new Timestamp(time.milliseconds),DateUtils.ISO8601_DATETIME_PATTERN))

@@ -48,7 +48,7 @@ object DataHub2OdpsDemo {
 
 
     /**
-      * datahub streaming任务目前可以在自建spark上跑，不支持maxcompute平台
+      * datahub streaming任务目前可以在自建spark上跑，暂不支持maxcompute平台
       *
       * 目前MaxCompute Spark支持以下使用场景：
       * Java/Scala所有离线场景，GraphX、Mllib、RDD、Spark-SQL、PySpark等。
